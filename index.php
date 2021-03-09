@@ -38,8 +38,45 @@ $name = array('asma', 'areeba', 'seema', 'tooba');
 <li><?php echo $value. '<br>';?></li>
     <?php } ?>
 </ul>
-     
+<!-- <?php
+date_default_timezone_set("Asia/Seoul");
+echo "The time is " . date("h:i:sa");
+?>
+<?php
+echo "The time is " . date("h:i:sa");
+?>
+<br>
+<br>
+<?php
+$d=strtotime("next-day");
+echo "Created date is " . date("Y-m-d h:i:sa", $d);
+?> -->
+<!-- <?php 
+$mon = strtotime("Feb 2020");
+$mon2 = date("m-y");
+$end = $mon - $mon2;
+echo $end
+?> -->
+<!-- <?php
+$startdate = strtotime("Feb 17 2020");
+$enddate = strtotime("+month", $startdate);
 
+  echo date("M");
+
+
+?> -->
+<?php
+$d1=strtotime("feb 17 2020");
+$d2=round(($d1-time())/60/60/24);
+$end = $d2   * 12 / 365 ;
+$end2 = round(-$end);
+echo $end2
+?>
+<br>
+<br>
+<?php 
+
+?>
 </form>
 </div>
 </body>
